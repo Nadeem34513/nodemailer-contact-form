@@ -46,5 +46,5 @@ app.post('/contact', (req, res) => {
 })
 
 //PORT
-const PORT = 8000
+const PORT = process.env.PORT || 8000 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`))
